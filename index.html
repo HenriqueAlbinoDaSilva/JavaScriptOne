@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/esqueleto.css">
+    <script src="js/index.js"></script>
+    <title>Primeiro Projeto Com JavaScript</title>
+</head>
+<body>
+    <main>
+        <header>
+            <a href="#" id="mostra-form-cadastro">Inserir Novo Contato</a>
+        </header>
+
+        <div id="formulario-cadastro-contato">
+            <fieldset>
+                <legend>Cadastrar um Novo Contato</legend>
+                <form id="form-contato" autocomplete="nope">
+                    <label>Nome: <input type="text" id="nome" name="nome" required></label>
+                    <label>E-mail: <input type="email" id="email" name="email" required></label>
+                    <label>Telefone: <input type="text" id="telefone" name="telefone" required maxlength="15"></label>
+                    <label>Cidade: <input type="text" id="cidade" name="cidade" required></label>
+
+                    <fieldset>
+                        <legend>Selecione um Avatar</legend>
+                        <ul>
+                            <li>
+                                <label>
+                                    <img src="img/homer.jpg" alt="homer">
+                                    <input type="radio" name="avatar_selecionado" value="homer.jpg">
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <img src="img/marge.png" alt="marge">
+                                    <input type="radio" name="avatar_selecionado" value="marge.png">
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <img src="img/bart.jpg" alt="bart">
+                                    <input type="radio" name="avatar_selecionado" value="bart.jpg">
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <img src="img/lisa.png" alt="lisa">
+                                    <input type="radio" name="avatar_selecionado" value="lisa.png">
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <button id="esconde-form-cadastro" type="button">Cancelar </button>
+                    <button type="submit">Salvar</button>
+                </form>
+            </fieldset>
+        </div>
+
+        <div id="lista-contatos">
+            <h1>Contatos Inseridos</h1>
+            <table id="tbl-contatos">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Nome:</th>
+                        <th>E-mail:</th>
+                        <th>Telefone:</th>
+                        <th>Cidade:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="img/cross.png" class="botao-remover-contato"></td>
+                        <td><img src="img/homer.jpg" alt=""></td>
+                        <td>Henrique</td>
+                        <td>henrique9879@hotmail.com</td>
+                        <td>(11) 3621-8806</td>
+                        <td>Jundiai</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+</body>
+</html>
